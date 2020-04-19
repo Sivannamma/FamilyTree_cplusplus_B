@@ -1,0 +1,8 @@
+#!/bin/bash
+source grade_utils
+printf "\n\n*** Grade Ancestor-Tree Part B *** \n\n"
+
+make -f Makefile clean
+call make -f Makefile test
+call timeout 3 ./test
+make -f Makefile --silent clean
