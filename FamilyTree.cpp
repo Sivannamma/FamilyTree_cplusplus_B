@@ -279,7 +279,8 @@ void Tree::remove(std::string name) {
         deleteTree(temp);
 
 
-    } //else {
-    //throw std::invalid_argument("The tree doesnt contain " + name);
-    //}
+    } 
+	else {
+    throw std::invalid_argument("The tree doesnt contain " + name);
+    }
 }
